@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500).send(err.stack);
 });
 
-const ip = '192.168.20.54';
+const ip = '192.168.20.36';
 server.listen(port, ip, function() {
     console.log('Aplicación de NodeJs ' + process.pid + ' inició en el puerto ' + server.address().address + ':' + server.address().port);
 });
