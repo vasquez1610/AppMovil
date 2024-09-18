@@ -14,7 +14,6 @@ const HomeViewModel = () => {
     );
 
     const { user, getUserSession } = useUserLocal();
-    console.log('Usuario: ' + JSON.stringify(user));
 
     useEffect(() => {
         getUserSession();
